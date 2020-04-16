@@ -1,0 +1,112 @@
+body{
+    background: #BBD2C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #536976, #BBD2C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+h1,h2,h3{
+    color: white;
+}
+.padre{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.img{
+    position: fixed;
+    transform: translateY(-50%);
+    height: 100%;
+    top: 50%;
+    z-index: -1000;
+
+    background: url(bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+/* Editando estilos por defecto de bootstrap */
+.padding_barra{
+    background: black;
+    border: solid 1px white ;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.padding_barra button{
+    color: white;
+}
+.row {
+
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.dropdown{
+    width: 95%;
+    
+    display: flex;
+    justify-content: left;
+    text-align: center;
+}
+
+.dropdown-toggle::after {
+
+    border-top: 0.5em solid;
+    border-right: 0.4em solid transparent;
+    border-left: .4em solid transparent;
+    margin-left: 9.5rem;
+
+}
+*, ::after, ::before {
+
+    box-sizing: content-box;
+
+}
+.btn:hover {
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: none;
+}
+
+.dropdown-menu {
+  
+    text-align: left;
+    list-style: none;
+    background-color: #000;
+    background-clip: padding-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0;
+
+}
+.dropdown-menu.show{
+
+    inset: 0px auto auto 0px;
+
+    transform: translate3d(0px, 38px, 0px) !important;
+
+    width: 100%;
+}
+.dropdown-item{
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255, 0.6);
+    background-clip: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 0;
+}
+
